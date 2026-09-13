@@ -6,59 +6,32 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaohe
   type: vless
-  server: 104.21.70.21
+  server: 103.119.18.30
   port: 443
-  uuid: d9abc6e3-83bf-4c28-ae68-72465e2abe39
+  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ikt-kkc25f27k-3tehr8mc.ade-1007.workers.dev
+  servername: mianfei-73q.pages.dev
   network: ws
   ws-opts:
-    path: /vl/xQhNe7rLrdM0emZlaW5LMsNwcoIgnT?ed=2560
+    path: /proxyip=154.3.33.43
     headers:
-      Host: ikt-kkc25f27k-3tehr8mc.ade-1007.workers.dev
+      Host: mianfei-73q.pages.dev
 - name: 🇨🇿 CZ 02 - xiaohe
   type: vless
-  server: 172.64.42.85
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇨🇿 CZ 03 - xiaohe
-  type: vless
-  server: 185.207.197.123
+  server: 103.119.18.30
   port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
+  servername: mianfei-73q.pages.dev
   network: ws
   ws-opts:
-    path: /Telegram-WangCai2🇨🇳
+    path: /proxyip=154.3.33.43
     headers:
-      Host: notls.lukongtou.eu.org
-- name: 🇨🇿 CZ 04 - xiaohe
-  type: vless
-  server: 104.16.174.164
-  port: 443
-  uuid: 73796e63-0000-4000-8000-000000000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wireguard.ahmad-kh5716.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: wireguard.ahmad-kh5716.workers.dev
+      Host: mianfei-73q.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,8 +39,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - xiaohe
   - 🇨🇿 CZ 02 - xiaohe
-  - 🇨🇿 CZ 03 - xiaohe
-  - 🇨🇿 CZ 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -75,7 +46,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - xiaohe
   - 🇨🇿 CZ 02 - xiaohe
-  - 🇨🇿 CZ 03 - xiaohe
-  - 🇨🇿 CZ 04 - xiaohe
 rules:
 - MATCH,PROXIES
